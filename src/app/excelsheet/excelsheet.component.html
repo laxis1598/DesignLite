@@ -1,0 +1,24 @@
+<!--header content-->
+<div class="header">
+    <h1>Sirius Designlite</h1>
+</div>
+<!--input where the user can upload the file -->
+<input type="file" (change)=onFileChange($event) multiple="false">
+<!--excel sheet data in the table format-->
+<table>
+    <tbody> 
+        <tr *ngFor="let row of data;let i=index">
+            <td *ngFor="let cell of row">
+                {{cell}}
+            </td>
+            <td *ngIf="i==0">
+                Images
+            </td>
+            <!--image from the excel sheet-->
+            <td *ngIf="i!=0">
+                <img src={{image[i]}}>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

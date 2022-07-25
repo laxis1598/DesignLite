@@ -1,0 +1,35 @@
+
+
+
+
+/*header styling*/
+.header{
+    padding: 20px;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    font-family: fantasy;
+    background-color: #00008b;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+input {
+    margin:50px auto;
+}
+
+/*table content styling*/
+table,tbody,tr,td {
+    border: 1px solid;
+}
+
+td{
+    width:100px;
+    padding: 10px;
+}
+
+img{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}
